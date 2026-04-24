@@ -17,9 +17,9 @@ def driver():
 
 def test_about_page(driver):
     driver.get("https://itcareerhub.de/ru")
-    sleep(2)
     about_link = driver.find_element(By.LINK_TEXT, "Способы оплаты")
     about_link.click()
+    sleep(3)
     driver.save_screenshot("HW_2/ICH.png")
-    sleep(2)
+
 
